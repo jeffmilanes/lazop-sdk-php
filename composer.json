@@ -9,9 +9,7 @@
             "email": "hello@jeffmilanes.com"
         }
     ],
-    "require": {
-        "php": ">=5.3.2"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "jeffmilanes\\PHPLazadaSDK\\": "src/"
