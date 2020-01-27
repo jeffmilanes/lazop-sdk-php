@@ -14,7 +14,7 @@ composer require jeffmilanes/lazop-sdk-php
 Usage
 -----
 
-Sample Usage
+Sample usage:
 ```php
 use jeffmilanes\PHPLazadaSDK\LazopClient;
 use jeffmilanes\PHPLazadaSDK\LazopRequest;
