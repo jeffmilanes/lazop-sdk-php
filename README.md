@@ -10,3 +10,22 @@ Run the following command:
 ```bash
 composer require jeffmilanes/lazop-sdk-php
 ```
+
+Usage
+-----
+
+Sample Usage
+```php
+use jeffmilanes\PHPLazadaSDK\LazopClient;
+use jeffmilanes\PHPLazadaSDK\LazopRequest;
+
+...
+$c = new LazopClient('https://api.lazada.test/rest', '${appKey}', '${appSecret}');
+$request = new LazopRequest('/mock/api/get');
+$request->addApiParam('api_id',1);
+$request->addHttpHeaderParam('cx','test');
+    
+var_dump($c->execute($request));
+...
+
+```
