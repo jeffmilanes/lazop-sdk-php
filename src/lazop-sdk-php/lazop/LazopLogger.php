@@ -4,6 +4,19 @@ namespace jeffmilanes\PHPLazadaSDK;
 
 class LazopLogger
 {
+	public function __construct() 
+	{
+		if (!defined("LAZOP_SDK_WORK_DIR"))
+		{
+			define("LAZOP_SDK_WORK_DIR", dirname(__FILE__));
+		}
+		
+		if (!defined("LAZOP_AUTOLOADER_PATH"))
+		{
+			define("LAZOP_AUTOLOADER_PATH", dirname(__FILE__));
+		}
+	}
+	
 	public $conf = array(
 		"separator" => "\t",
 		"log_file" => ""
